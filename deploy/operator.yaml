@@ -18,7 +18,6 @@ spec:
           # Replace this with the built image name
           image: hub.xesv5.com/liulei02/liulei02:latest
           command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
-          - redis-operator-test
           imagePullPolicy: IfNotPresent
           env:
             - name: WATCH_NAMESPACE
