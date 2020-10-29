@@ -19,7 +19,7 @@ spec:
           image: hub.xesv5.com/liulei02/liulei02:latest
           command:
           - redis-operator-test
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           env:
             - name: WATCH_NAMESPACE
               valueFrom:
