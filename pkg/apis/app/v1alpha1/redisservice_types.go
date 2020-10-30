@@ -10,6 +10,7 @@ import (
 // RedisServiceSpec defines the desired state of RedisService
 // +k8s:openapi-gen=true
 type RedisServiceSpec struct {
+	Replicas int `json:`
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "operator-sdk generate k8s" to regenerate code after modifying this file
 	// Add custom validation using kubebuilder tags: https://book-v1.book.kubebuilder.io/beyond_basics/generating_crd.html
